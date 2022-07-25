@@ -1,0 +1,43 @@
+kshao commenting on aina1
+- Really good use of the weak entity
+- Missed out on sessions and it's attributes
+- Good use of the ISA
+- Possible incorrect usage of the arrow (maybe should be a thick arrow)
+- Interesting usage of relationship of genre's 
+
+kshao commenting on chengxua
+- the movie recommendation has two lines which seems to be incorrect
+- Very minimal use of thick lines (I think missing a couple) 
+- I think missing a couple of arrows
+- streaming relationships and entities and attributes may be incorrect
+- Interesting use of relationship of crew movie and cast movie
+
+aina1 commenting on kshao
+- thick line between entity Movies and attribute Genre which is incorrect
+- Possible wrong use of Streaming service Entity
+- Possible wrong use of duration relationship between session and customer
+- Good organization overall
+- Incorrect relationship(following person) between Movies and customer
+
+aina1 commenting on chengxua (the first one he posted)
+- incorrect use of cast movies and are movie relationships
+- Possible incorrect use of keep relatioship
+- Interesting idea on how to show relationships between the streaming sessions the movie and the customer
+- Possible misuse of movie and recommended relationship
+- Well organized and attributes are detailed
+
+chengxua commenting on kshao
+- Well organized diagram and capture most of the aspect in the spec
+- Possible incorrect constraints in few of the relationships
+- A better modelling is needed to capture the relationship between moive, 
+  streaming session and customer.
+
+chengxua commenting on aina1
+- Well organized diagram and capture most of the aspect in the spec
+- Incorrect constraints of relationship between cast member and movies
+- Possible incorrect constraints in few of the relationships
+- Need to set the relationship of "Following person" between movie person and 
+  customer instead of between movie and customer
+- A better modelling for genre is needed to capture how it relates to 
+  moive and customer  
+

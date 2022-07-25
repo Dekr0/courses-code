@@ -1,0 +1,323 @@
+.print Question 1 --chengxua
+Question 1 --chengxua
+SELECT DISTINCT w.cid, r.recommended 
+FROM watch w, recommendations r, movies m 
+WHERE r.watched = w.mid 
+AND w.mid = m.mid 
+AND w.duration >= m.runtime * 0.5 
+ORDER BY score DESC;
+c1450|120
+c1300|120
+c1350|120
+c450|120
+c750|120
+c1100|120
+c1850|120
+c1050|120
+c2150|120
+c1100|30
+c800|30
+c1000|140
+c1200|140
+c550|30
+c700|30
+c500|20
+c1700|210
+c2050|210
+c1500|20
+c1800|20
+c250|20
+c2100|210
+c400|20
+c1500|60
+c2100|60
+c2050|150
+c2200|150
+c1850|150
+c900|20
+c1700|60
+c1400|150
+c750|20
+c1000|20
+c500|10
+c2000|210
+c1500|10
+c1800|10
+c400|10
+c1550|120
+c2050|120
+c250|10
+c800|210
+c1250|230
+c250|120
+c150|130
+c1950|70
+c1550|130
+c800|130
+c150|70
+c1650|130
+c300|70
+c1100|60
+c800|60
+c550|60
+c700|60
+
+.print Question 2 --chengxua
+Question 2 --chengxua
+SELECT DISTINCT moviePeople.pid, moviePeople.name 
+FROM moviePeople, casts c1, casts c2, casts c3, movies 
+WHERE LOWER(movies.title) = LOWER('The Shawshank Redemption')
+AND c1.mid = movies.mid 
+AND c1.pid = c2.pid 
+AND c1.pid = c3.pid 
+AND c1.mid <> c2.mid 
+AND c2.mid <> c3.mid 
+AND c1.mid <> c3.mid 
+AND c1.pid = moviePeople.pid;
+p100|Morgan Freeman
+
+.print Question 3 --chengxua
+Question 3 --chengxua
+SELECT DISTINCT R.recommended, M2.title 
+FROM casts C, moviePeople MP, movies M1, movies M2, recommendations R 
+WHERE LOWER(MP.name) = LOWER('Morgan Freeman') 
+AND C.pid = MP.pid 
+AND M1.mid = C.mid 
+AND M1.mid = R.watched 
+AND R.recommended = M2.mid 
+AND M2.year = STRFTIME('%Y', 'now');
+220|The 355
+230|Heatwave
+210|Moonfall
+
+.print Question 4 --chengxua
+Question 4 --chengxua
+SELECT s.cid, c.name, strftime('%Y-%m', s.sdate) as month, COUNT(w.mid) as quantity 
+FROM customers c, movies m, sessions s, watch w 
+WHERE julianday('now')-julianday(s.sdate) < 365 
+AND s.cid = c.cid 
+AND s.sid = w.sid 
+AND w.mid = m.mid 
+AND w.duration >= m.runtime * 0.5 
+GROUP BY s.cid, DATE(s.sdate, 'start of month'), c.name;
+c100|Davood Rafiei|2021-04|1
+c1000|Anh Dinh|2021-02|1
+c1000|Anh Dinh|2021-06|1
+c1000|Anh Dinh|2021-07|1
+c1000|Anh Dinh|2021-09|1
+c1050|Juan Fernandez Lezama|2021-05|1
+c1050|Juan Fernandez Lezama|2021-09|1
+c1050|Juan Fernandez Lezama|2022-01|1
+c1100|Joshua Ji|2021-03|1
+c1100|Joshua Ji|2021-07|1
+c1100|Joshua Ji|2021-11|1
+c1200|Vanessa Huang|2021-03|1
+c1250|Jason Hoang|2021-07|1
+c1300|Muhammad Hossain|2021-07|1
+c1300|Muhammad Hossain|2021-10|1
+c1350|Jake Hennig|2021-03|2
+c1350|Jake Hennig|2021-05|1
+c1400|Richard He|2021-04|1
+c1450|Mohammad Hammad|2022-01|1
+c150|John Smith|2021-06|1
+c150|John Smith|2022-01|1
+c1500|Harsh Gosalia|2021-03|1
+c1500|Harsh Gosalia|2021-09|1
+c1500|Harsh Gosalia|2021-11|1
+c1550|Eric Kim|2021-07|1
+c1550|Eric Kim|2021-10|1
+c1550|Eric Kim|2021-12|1
+c1650|Danielle Kropinak|2021-05|1
+c1700|Varun Kumaravel|2021-09|1
+c1750|Seoyoung Lee|2021-10|1
+c1800|John Doe|2021-05|1
+c1850|Jane Doe|2021-04|1
+c1850|Jane Doe|2021-12|1
+c1900|Troung Pham|2021-11|1
+c1950|Steven Tang|2021-09|1
+c1950|Steven Tang|2021-11|1
+c200|Stan Fedyk|2021-09|1
+c2000|Mark Maligalig|2021-02|1
+c2050|Manpreet Singh|2021-04|1
+c2050|Manpreet Singh|2021-06|1
+c2050|Manpreet Singh|2021-07|1
+c2050|Manpreet Singh|2021-12|1
+c2100|Farha Machiwala|2021-09|1
+c2100|Farha Machiwala|2021-11|1
+c2100|Farha Machiwala|2021-12|1
+c2150|Casper Nguyen|2021-09|1
+c2150|Casper Nguyen|2021-10|1
+c2200|Grace Mullane|2021-11|1
+c250|Kezziah Ayuno|2021-04|1
+c250|Kezziah Ayuno|2021-05|1
+c250|Kezziah Ayuno|2021-11|1
+c300|Ayan Babwany|2021-04|1
+c300|Ayan Babwany|2021-05|1
+c400|Mohammad Ahmadi|2021-03|1
+c400|Mohammad Ahmadi|2021-07|1
+c450|Liam Chen|2021-03|1
+c500|Dylan Clarke|2021-08|1
+c500|Dylan Clarke|2022-01|1
+c550|Weiguo Jiang|2021-05|1
+c600|Clare Chen|2021-06|1
+c650|Ben Chang|2021-10|1
+c700|Madison Bradley|2021-02|1
+c700|Madison Bradley|2021-11|1
+c750|Dove Goel|2021-10|1
+c750|Dove Goel|2022-01|1
+c800|Jack Geiger|2021-05|1
+c800|Jack Geiger|2021-11|1
+c800|Jack Geiger|2021-12|1
+c800|Jack Geiger|2022-01|1
+c850|Kelly Deng|2021-07|1
+c900|Marcus Der|2021-06|1
+c950|Charvi Dhamija|2021-06|1
+c950|Charvi Dhamija|2021-08|1
+
+.print Question 5 --chengxua
+Question 5 --chengxua
+SELECT s1.cid, c.name 
+FROM sessions s1, customers c 
+WHERE s1.cid = c.cid
+GROUP BY s1.cid, c.name 
+HAVING SUM(s1.duration) > 20 
+AND EXISTS 
+(SELECT s2.cid FROM sessions s2 
+WHERE s1.cid == s2.cid 
+AND s2.duration < 5 
+GROUP BY s2.cid);
+c2250|Hassaan Muhammad
+
+.print Question 6 --chengxua
+Question 6 --chengxua
+SELECT C.cid, C.name, 
+COUNT(S1.sid) as 'Number of Session', 
+SUM(IFNULL(S1.duration, 0)) as 'Total Duration of the Sessions', 
+IFNULL(WM.numMid, 0) as 'Number of Movies' 
+FROM customers C 
+LEFT OUTER JOIN sessions S1 ON C.cid = S1.cid 
+LEFT OUTER JOIN (SELECT W.cid, COUNT(W.mid) as numMid 
+FROM watch W, movies M 
+WHERE W.mid = M.mid 
+AND W.duration >= M.runtime * 0.5 
+GROUP BY W.cid) WM ON C.cid = WM.cid 
+GROUP BY C.cid, C.name;
+c100|Davood Rafiei|7|4450|1
+c1000|Anh Dinh|9|5230|4
+c1050|Juan Fernandez Lezama|3|2170|3
+c1100|Joshua Ji|10|5120|3
+c1150|Rui Huang|5|3070|0
+c1200|Vanessa Huang|6|2670|1
+c1250|Jason Hoang|7|3780|1
+c1300|Muhammad Hossain|4|2400|2
+c1350|Jake Hennig|9|4730|3
+c1400|Richard He|4|2790|1
+c1450|Mohammad Hammad|5|2930|1
+c150|John Smith|7|3880|2
+c1500|Harsh Gosalia|6|2270|3
+c1550|Eric Kim|7|4370|3
+c1600|Teagan Konrad|3|1510|0
+c1650|Danielle Kropinak|7|4650|1
+c1700|Varun Kumaravel|6|2990|2
+c1750|Seoyoung Lee|4|1820|1
+c1800|John Doe|6|3720|1
+c1850|Jane Doe|9|5050|2
+c1900|Troung Pham|1|980|1
+c1950|Steven Tang|5|2760|2
+c200|Stan Fedyk|6|3230|1
+c2000|Mark Maligalig|7|4080|1
+c2050|Manpreet Singh|6|3530|4
+c2100|Farha Machiwala|5|3750|3
+c2150|Casper Nguyen|9|3570|2
+c2200|Grace Mullane|9|4780|1
+c2250|Hassaan Muhammad|8|24|0
+c2300|CMPUT 291|0|0|0
+c2350|CMPUT 391|0|0|0
+c250|Kezziah Ayuno|9|4660|3
+c300|Ayan Babwany|8|5420|2
+c350|Prateek Bahrani|3|1960|0
+c400|Mohammad Ahmadi|10|5590|2
+c450|Liam Chen|5|2580|1
+c500|Dylan Clarke|8|4510|2
+c550|Weiguo Jiang|7|3370|1
+c600|Clare Chen|5|3250|1
+c650|Ben Chang|6|4040|1
+c700|Madison Bradley|9|2710|2
+c750|Dove Goel|4|1650|2
+c800|Jack Geiger|7|5340|4
+c850|Kelly Deng|6|2200|1
+c900|Marcus Der|5|2210|1
+c950|Charvi Dhamija|17|6630|2
+
+.print Question 7 --chengxua
+Question 7 --chengxua
+SELECT DISTINCT C.pid, MP.name, COUNT(DISTINCT W.cid) 
+FROM moviePeople MP 
+LEFT OUTER JOIN casts C ON MP.pid = C.pid 
+LEFT OUTER JOIN follows F ON C.pid = F.pid 
+LEFT OUTER JOIN watch W ON F.cid = W.cid 
+LEFT OUTER JOIN movies M ON M.mid = W.mid
+WHERE C.pid IS NOT NULL  
+AND W.cid IS NOT NULL 
+AND W.duration >= M.runtime * 0.5 
+GROUP BY C.pid, MP.name;
+p100|Morgan Freeman|26
+p1000|Scarlett Johansson|23
+p1100|Cate Blanchett|22
+p1200|Gal Gadot|28
+p200|Tom Hanks|24
+p300|Tim Robbins|32
+p400|Ryan Reynolds|24
+p500|Dwayne Johnson|27
+p600|Jason Statham|28
+p700|Vin Diesel|26
+p800|Steve Rogers|31
+p900|Chris Hemsworth|25
+
+.print Question 8 --chengxua
+Question 8 --chengxua
+SELECT M.mid, M.title
+FROM movies M 
+LEFT OUTER JOIN casts C ON M.mid = C.mid 
+WHERE C.pid IN (SELECT C.pid 
+FROM follows F 
+WHERE C.pid = F.pid 
+GROUP BY F.pid 
+HAVING COUNT(F.cid) >= 2)
+GROUP BY M.mid, M.title 
+HAVING COUNT(C.pid) >= 3;
+120|The Fate of the Furious
+140|The Avengers
+150|Thor:Ragnarok
+
+.print Question 9 --chengxua
+Question 9 --chengxua
+CREATE VIEW hotMovies AS 
+SELECT M.mid, M.title, M.year, M.runtime, 
+COUNT(DISTINCT W.cid) as watchCnt, 
+R.recommended, R.score 
+FROM movies M LEFT OUTER JOIN watch W ON M.mid = W.mid 
+LEFT OUTER JOIN recommendations R ON M.mid = R.watched 
+WHERE W.duration >= M.runtime * 0.5 
+GROUP BY M.mid, M.title, M.year, M.runtime, R.recommended, R.score 
+HAVING COUNT(DISTINCT W.cid) >= 5;
+
+.print Question 10 --chengxua
+Question 10 --chengxua
+SELECT C.cid, C.name, 
+GROUP_CONCAT(DISTINCT HM.recommended) as 'recommended movies' 
+FROM customers C, watch W, hotMovies HM  
+WHERE W.mid = HM.mid 
+AND W.duration >= HM.runtime * 0.5 
+AND C.cid = W.cid 
+GROUP BY C.cid, C.name 
+HAVING COUNT(HM.mid) >= 2;
+c1050|Juan Fernandez Lezama|120
+c1100|Joshua Ji|120
+c1350|Jake Hennig|120
+c1500|Harsh Gosalia|10,20
+c1800|John Doe|10,20
+c2150|Casper Nguyen|120
+c250|Kezziah Ayuno|10,20
+c400|Mohammad Ahmadi|10,20
+c500|Dylan Clarke|10,20

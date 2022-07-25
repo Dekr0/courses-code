@@ -1,0 +1,3 @@
+/home/dekr0/github/CMPUT379/assignment/A4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dekr0/github/CMPUT379/assignment/A4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dekr0/github/CMPUT379/assignment/A4/cmake-build-debug/CMakeFiles/a4w22.dir

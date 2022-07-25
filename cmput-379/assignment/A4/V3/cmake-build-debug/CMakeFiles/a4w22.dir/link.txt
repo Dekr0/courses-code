@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/a4w22.dir/main.cpp.o CMakeFiles/a4w22.dir/resource_manager.cpp.o CMakeFiles/a4w22.dir/utils.cpp.o CMakeFiles/a4w22.dir/simulator.cpp.o  -o a4w22  -pthread 

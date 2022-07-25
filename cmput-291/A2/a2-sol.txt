@@ -1,0 +1,113 @@
+-- A solution prepared by Davood Rafiei, 2022, copyright
+--Q1
+  select distinct cid, recommended
+  from recommendations r, watch w, movies m
+  where w.mid=m.mid and w.duration >= 0.5*m.runtime and m.mid=r.watched
+  order by score desc;
+
+--Q2
+  select distinct p.pid, p.name
+  from movies m, casts c, moviePeople p, casts c2, casts c3
+  where m.mid=c.mid and lower(m.title)='the shawshank redemption' and c.pid=p.pid and c.pid=c2.pid and c.pid=c3.pid and
+    c.mid != c2.mid and c2.mid != c3.mid and c.mid != c3.mid;
+
+--Q3
+  select distinct m.mid, m.title
+  from recommendations r, casts c, moviePeople p, movies m
+  where p.pid=c.pid and lower(p.name)='morgan freeman' and r.watched=c.mid and
+        r.recommended=m.mid and year=strftime('%Y','now');
+
+--Q4
+  select c.cid, c.name, strftime('%m',s.sdate), count(*)
+  from customers c, sessions s, watch w, movies m
+  where c.cid=s.cid and s.sid=w.sid and s.cid=w.cid and w.mid=m.mid and
+        w.duration >=0.5*m.runtime and s.sdate >= date ('now','-365 days') and
+	s.sdate <date('now')
+  group by c.cid, c.name, strftime('%Y',s.sdate), strftime('%m',s.sdate);
+
+--Q5
+  select c.cid, c.name
+  from sessions s, customers c
+  where s.cid=c.cid
+  group by c.cid, c.name
+  having sum(duration) > 20
+  except
+  select c.cid, c.name
+  from sessions s, customers c
+  where s.cid=c.cid and duration >= 5;
+
+--Q6
+  select c.cid, ifnull(s.sCnt,0), ifnull(s.totDuration,0), ifnull(ww.mCnt,0)
+  from customers c left outer join 
+       (select cid, count(*) as sCnt, sum(duration) as totDuration
+        from sessions
+        group by cid) s on c.cid=s.cid left outer join
+       (select w.cid, count(w.mid) as mCnt
+        from watch w, movies m
+        where w.mid=m.mid and w.duration >= 0.5*m.runtime
+        group by  w.cid) ww
+        on s.cid=ww.cid;
+
+--Q7
+-- The following query returns only cast members who have such followers
+  select p.pid, p.name, count(f.cid)
+  from moviePeople p, follows f
+  where p.pid=f.pid and
+        not exists (select mid
+                    from casts c
+                    where c.pid=f.pid
+                    except
+                    select m.mid
+                    from movies m, watch w
+                    where m.mid=w.mid and w.cid=f.cid and w.duration>=0.5*m.runtime)
+  group by p.pid, p.name
+  order by count(f.cid) desc;
+
+-- The following query returns all cast members 
+  select p.pid, p.name, ifnull(fCnt,0)
+  from moviePeople p left outer join 
+       (select pid, count(*) as fCnt
+        from follows f
+        where not exists (select mid
+          from casts c
+          where c.pid=f.pid
+          except
+          select m.mid
+          from movies m, watch w
+          where m.mid=w.mid and w.cid=f.cid and w.duration>=0.5*m.runtime)
+	  group by pid) ff
+        using (pid)
+  order by fCnt desc;
+
+--Q8
+  select m.mid, m.title
+  from movies m, casts c
+  where m.mid=c.mid and
+        not exists (select pid
+                    from casts c2
+                    where c2.mid=m.mid
+                    except
+                    select pid
+                    from follows
+                    group by pid
+                    having count(*) >= 2)
+  group by m.mid, m.title
+  having count(*) >=3;
+
+--Q9
+  drop view if exists hotMovies;
+  create view hotMovies(mid,title,year,runtime,watchCnt,recommended, score) as
+  select mid, title, year, runtime, watchCnt, recommended, score
+  from 
+  (select m.mid, m.title, m.year, m.runtime, count(distinct cid) as watchCnt
+  from movies m, watch w
+  where m.mid=w.mid and w.duration>=0.5*m.runtime
+  group by m.mid, m.title, m.year, m.runtime
+  having count(distinct cid) > 5) hh left outer join recommendations r on hh.mid=r.watched;
+
+--Q10
+  select c.cid, c.name, group_concat(recommended)
+  from customers c, watch w, hotMovies h
+  where c.cid=w.cid and w.mid=h.mid and w.duration>=0.5*h.runtime
+  group by c.cid, c.name
+  having count(distinct h.mid) >=2;
