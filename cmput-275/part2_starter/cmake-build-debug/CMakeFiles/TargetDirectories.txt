@@ -1,0 +1,5 @@
+/home/dekr0/Documents/cmput275/part2_starter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dekr0/Documents/cmput275/part2_starter/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dekr0/Documents/cmput275/part2_starter/cmake-build-debug/CMakeFiles/client.dir
+/home/dekr0/Documents/cmput275/part2_starter/cmake-build-debug/CMakeFiles/server.dir
+/home/dekr0/Documents/cmput275/part2_starter/cmake-build-debug/CMakeFiles/test.dir

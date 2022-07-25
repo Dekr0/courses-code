@@ -1,0 +1,20 @@
+Name: Chengxuan Li
+ID: 1631060
+CMPUT 275, Winter 2021
+
+Exercise 3: Garage Collector Emulator
+
+Included Files:
+	* Makefile
+	* README
+	* ref_manager.cpp
+	* ref_manager.h
+	* we3_test.cpp
+
+Running Instructions:
+	To compile all the .cpp file into obejct files, use "make -s compile"
+	To link all the object files and create an target file "we3_solution"
+	, use "make -s we3_solution" (require object files)
+	To run all the steps above at once, use "make -s all"
+	To clean up all the object files and the final executable, use "make -s
+	clean"

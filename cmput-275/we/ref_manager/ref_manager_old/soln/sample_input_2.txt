@@ -1,0 +1,11 @@
+c 17 5 hello
+q 17
+s 1 17
+q 1
+q 25
+c 17 2 hi
+g
+c 1 8 cmput275
+q 1
+g
+e

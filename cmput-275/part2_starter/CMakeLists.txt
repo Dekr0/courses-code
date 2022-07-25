@@ -1,0 +1,6 @@
+project(client)
+project(server)
+project(test)
+add_executable(client client/client.cpp client/preprocess.cpp)
+add_executable(server server/server.cpp server/digraph.cpp server/dijkstra.cpp server/handle.cpp)
+add_executable(test test.cpp)

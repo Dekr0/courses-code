@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dekr0/Documents/cmput275/we/divide_and_conquer/climbing.cpp
+
+/home/dekr0/Documents/cmput275/we/divide_and_conquer/generic_test.cpp
+iostream
+-
+

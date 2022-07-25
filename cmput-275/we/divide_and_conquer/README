@@ -1,0 +1,21 @@
+Name: Chengxuan Li
+ID: 1631060
+CMPUT 275, Winter 2021
+
+Weekly Exercise 7: Divide and Conquer
+
+Included Files:
+    * climbing.cpp
+    * driver.cpp
+	* Makefile
+	* README
+
+List of Makefile Targets:
+    * climbing
+    * climbing.o
+    * driver.o
+    * clean
+
+Running Instruction:
+    - To generate an exectuable, use "make climbing"
+    - TO remove all executable and objects files, use "make clean"

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/pipe_mul_reader.dir/multiline_reader.cpp.o  -o pipe_mul_reader 

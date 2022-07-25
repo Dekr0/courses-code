@@ -1,0 +1,2 @@
+project(linked_list_ws)
+add_executable(link_list_ws listtest_ws_sol.cpp)

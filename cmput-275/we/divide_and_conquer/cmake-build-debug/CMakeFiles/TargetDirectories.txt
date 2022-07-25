@@ -1,0 +1,5 @@
+/home/dekr0/Documents/cmput275/we/divide_and_conquer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dekr0/Documents/cmput275/we/divide_and_conquer/cmake-build-debug/CMakeFiles/TC0.dir
+/home/dekr0/Documents/cmput275/we/divide_and_conquer/cmake-build-debug/CMakeFiles/TC1.dir
+/home/dekr0/Documents/cmput275/we/divide_and_conquer/cmake-build-debug/CMakeFiles/GTC.dir
+/home/dekr0/Documents/cmput275/we/divide_and_conquer/cmake-build-debug/CMakeFiles/edit_cache.dir

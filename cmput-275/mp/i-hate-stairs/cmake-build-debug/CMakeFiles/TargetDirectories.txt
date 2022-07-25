@@ -1,0 +1,3 @@
+D:/Dekr0/cmput275/mp/i-hate-stairs/cmake-build-debug/CMakeFiles/we.dir
+D:/Dekr0/cmput275/mp/i-hate-stairs/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Dekr0/cmput275/mp/i-hate-stairs/cmake-build-debug/CMakeFiles/rebuild_cache.dir

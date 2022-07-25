@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="exam_c++" targetName="exam_c++" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="512a58db-8534-445e-8c81-9984684c451f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1oxmUeoXb7YRlcapMsGabGMw2Py" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../in-class/hash_table" />
+  </component>
+  <component name="RunManager">
+    <configuration name="exam_c++" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="exam_c++" TARGET_NAME="exam_c++" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="exam_c++" RUN_TARGET_NAME="exam_c++">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="512a58db-8534-445e-8c81-9984684c451f" name="Default Changelist" comment="" />
+      <created>1614236632994</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614236632994</updated>
+      <workItem from="1614236634063" duration="994000" />
+      <workItem from="1614270160454" duration="1993000" />
+      <workItem from="1614273215614" duration="550000" />
+      <workItem from="1614275111079" duration="231000" />
+      <workItem from="1614319220762" duration="180000" />
+      <workItem from="1614570830727" duration="1000" />
+      <workItem from="1614634968428" duration="3000" />
+      <workItem from="1614639498760" duration="1000" />
+      <workItem from="1614991142414" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="260" y="283" key="FileChooserDialogImpl" timestamp="1614991168534">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="260" y="283" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1614991168534" />
+    <state width="928" height="284" key="GridCell.Tab.0.bottom" timestamp="1614275341494">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="928" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1614275341494" />
+    <state width="928" height="284" key="GridCell.Tab.0.center" timestamp="1614275341494">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="928" height="284" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1614275341494" />
+    <state width="928" height="284" key="GridCell.Tab.0.left" timestamp="1614275341494">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="928" height="284" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1614275341494" />
+    <state width="928" height="284" key="GridCell.Tab.0.right" timestamp="1614275341494">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="928" height="284" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1614275341494" />
+    <state width="914" height="351" key="GridCell.Tab.1.bottom" timestamp="1614272154985">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="914" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1614272154985" />
+    <state width="914" height="351" key="GridCell.Tab.1.center" timestamp="1614272154985">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="914" height="351" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1614272154985" />
+    <state width="914" height="351" key="GridCell.Tab.1.left" timestamp="1614272154985">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="914" height="351" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1614272154985" />
+    <state width="914" height="351" key="GridCell.Tab.1.right" timestamp="1614272154985">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="914" height="351" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1614272154985" />
+  </component>
+</project>

@@ -1,0 +1,6 @@
+/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/CMakeFiles/pipe_reader.dir
+/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/CMakeFiles/pipe_writer.dir
+/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/CMakeFiles/pipe_mul_reader.dir
+/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/CMakeFiles/pip_mul_writer.dir

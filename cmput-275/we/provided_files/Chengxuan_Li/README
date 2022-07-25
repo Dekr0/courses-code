@@ -1,0 +1,19 @@
+Name: Chengxuan Li
+ID: 1631060
+CMPUT 275, Winter 2021
+
+Exercise 5: Dynamic Hashing
+
+Included Files:
+	* exercise5.cpp
+	* hash_table.h
+	* linked_list.h
+	* dynarray.h
+	* Makefile
+	* README
+
+Running Instruction:
+    - To generate an executable file, use "make exercise5"
+    - To compiles the object, use "make exercise5.o"
+    - To removes the object exercise5.o and the executable exercise5, use "make
+    clean"

@@ -1,0 +1,23 @@
+Name: Chengxuan Li
+ID: 1631060
+CMPUT 274, Fall 2020
+
+Assignment 2: Huffman Coding
+
+
+Included Files:
+    * util.py
+    * README
+
+
+Running Instructions:
+    To use the functions of compression and decompression from util.py, import
+    the util.py module
+
+
+Note and Assumption:
+    This program passed all the test provided from the Makefile (web version and
+    the non web version). Also, additional images and other different types of
+    are also tested by the this program. The uncompressed file from the
+    compressed file is same as the original file before compression. No corruption
+    occurs, or make the file unrecognizable after compression and decompression.

@@ -1,0 +1,3 @@
+D:/Dekr0/cmput275/in-class/lec08-code/cmake-build-debug/CMakeFiles/lec08-code.dir
+D:/Dekr0/cmput275/in-class/lec08-code/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Dekr0/cmput275/in-class/lec08-code/cmake-build-debug/CMakeFiles/rebuild_cache.dir

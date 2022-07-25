@@ -1,0 +1,8 @@
+project(pipe_mul_reader)
+project(pipe_mul_writer)
+project(pipe_reader)
+project(pipe_writer)
+add_executable(pipe_reader reader.cpp)
+add_executable(pipe_writer writer.cpp)
+add_executable(pipe_mul_reader multiline_reader.cpp)
+add_executable(pip_mul_writer multiline_writer.cpp)

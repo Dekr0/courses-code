@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/graph_concept.dir/graph_concepts.cpp.o CMakeFiles/graph_concept.dir/digraph.cpp.o  -o graph_concept 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/mp.dir/missing_multipliers.cpp.o  -o mp 

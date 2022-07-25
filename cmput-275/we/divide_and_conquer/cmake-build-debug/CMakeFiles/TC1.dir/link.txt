@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/TC1.dir/climbing.cpp.o CMakeFiles/TC1.dir/testcase-001.cpp.o  -o TC1 

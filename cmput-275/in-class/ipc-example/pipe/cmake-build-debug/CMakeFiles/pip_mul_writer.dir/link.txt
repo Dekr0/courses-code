@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/pip_mul_writer.dir/multiline_writer.cpp.o  -o pip_mul_writer 

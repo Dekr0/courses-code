@@ -1,0 +1,2 @@
+project(makefile_dependencies)
+add_executable(makefile_dependencies makefile_dependencies.cpp)

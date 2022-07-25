@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="pipe_writer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pipe_reader">
+				<Option output="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/pipe_reader" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 pipe_reader"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pipe_reader/fast">
+				<Option output="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/pipe_reader" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 pipe_reader/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pipe_writer">
+				<Option output="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/pipe_writer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 pipe_writer"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pipe_writer/fast">
+				<Option output="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/pipe_writer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 pipe_writer/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pipe_mul_reader">
+				<Option output="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/pipe_mul_reader" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 pipe_mul_reader"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pipe_mul_reader/fast">
+				<Option output="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/pipe_mul_reader" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 pipe_mul_reader/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pip_mul_writer">
+				<Option output="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/pip_mul_writer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 pip_mul_writer"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pip_mul_writer/fast">
+				<Option output="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/pip_mul_writer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 pip_mul_writer/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/multiline_reader.cpp">
+			<Option target="pipe_mul_reader"/>
+		</Unit>
+		<Unit filename="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/multiline_writer.cpp">
+			<Option target="pip_mul_writer"/>
+		</Unit>
+		<Unit filename="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/reader.cpp">
+			<Option target="pipe_reader"/>
+		</Unit>
+		<Unit filename="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/writer.cpp">
+			<Option target="pipe_writer"/>
+		</Unit>
+		<Unit filename="/home/dekr0/Documents/cmput275/in-class/ipc-example/pipe/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

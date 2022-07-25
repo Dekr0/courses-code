@@ -1,0 +1,29 @@
+<component name="ProjectDictionaryState">
+  <dictionary name="dekr0">
+    <words>
+      <w>aton</w>
+      <w>cerr</w>
+      <w>cout</w>
+      <w>echobuffer</w>
+      <w>echoserver</w>
+      <w>freeaddrinfo</w>
+      <w>getaddrinfo</w>
+      <w>htonl</w>
+      <w>htons</w>
+      <w>inaddr</w>
+      <w>inet</w>
+      <w>ipproto</w>
+      <w>lstn</w>
+      <w>netinet</w>
+      <w>ntoa</w>
+      <w>ntohl</w>
+      <w>ntohs</w>
+      <w>rcvtimeo</w>
+      <w>setsockopt</w>
+      <w>sndtimeo</w>
+      <w>sockaddr</w>
+      <w>strlen</w>
+      <w>structor</w>
+    </words>
+  </dictionary>
+</component>

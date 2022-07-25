@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/A1.dir/part1/server.cpp.o CMakeFiles/A1.dir/part1/handle.cpp.o CMakeFiles/A1.dir/part1/digraph.cpp.o CMakeFiles/A1.dir/part1/dijkstra.cpp.o  -o A1 

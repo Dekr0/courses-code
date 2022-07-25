@@ -1,0 +1,18 @@
+Name: Chengxuan Li
+ID: 1631060
+CMPUT 275, Winter 2021
+
+Exercise 6: Graph Concepts
+
+Included Files:
+    * graph_concepts.cpp
+	* Makefile
+    * edmonton-roads-2.0.1.txt
+	* README
+
+Running Instruction:
+    - To generate an executable file, use "make graph_concepts"
+    - To compiles the object, use "make graph_concepts" and "make digraph.o"
+    - To removes the object and the executable, use "make clean"
+    - To call the executable to count and print the number of components in
+    Emonton

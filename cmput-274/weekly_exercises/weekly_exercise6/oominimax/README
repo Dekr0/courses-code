@@ -1,0 +1,18 @@
+Name: Chengxuan Li
+ID: 1631060
+CMPUT 274, Fall 2020
+
+Exercise 6: Object-Oriented Minimax
+
+
+Included Files:
+    * submit.git.log.txt
+    * debugger.png
+    * oominimax.oy
+    * README
+
+
+Running Instruction:
+    To launch the program:
+        In terminal, execute "python3 oominimax.py", and follow the instruction
+        showed in the prompt

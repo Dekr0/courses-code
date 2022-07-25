@@ -1,0 +1,2 @@
+project(makefile_length)
+add_executable(makefile_length soln/makefile_length.cpp)

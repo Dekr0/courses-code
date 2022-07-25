@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+<<<<<<< HEAD
+D:/Dekr0/cmput275/we/matrix_class/matrix.cpp
+cassert
+-
+matrix.h
+D:/Dekr0/cmput275/we/matrix_class/matrix.h
+
+D:/Dekr0/cmput275/we/matrix_class/matrix.h
+=======
+/home/dekr0/Documents/cmput275/we/matrix_class/matrix.h
+>>>>>>> e7116be12d3097a537d7fa9ab195385da3d777b0
+cstddef
+-
+iostream
+-
+ostream
+-
+
+/home/dekr0/Documents/cmput275/we/matrix_class/test.cpp
+iostream
+-
+matrix.h
+/home/dekr0/Documents/cmput275/we/matrix_class/matrix.h
+

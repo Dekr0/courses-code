@@ -1,0 +1,3 @@
+D:/Dekr0/cmput275/mp/university_navigation/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Dekr0/cmput275/mp/university_navigation/cmake-build-debug/CMakeFiles/mp.dir
+D:/Dekr0/cmput275/mp/university_navigation/cmake-build-debug/CMakeFiles/rebuild_cache.dir

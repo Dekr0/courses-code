@@ -1,0 +1,17 @@
+Name: Chengxuan Li
+ID: 1631060
+CMPUT 274, Fall 2020
+
+Exercise 7: Dr. Moneybags
+
+
+Included Files:
+    * moneybags.py
+    * README
+
+
+Running Instruction:
+    To launch the program:
+        In terminal, execute "python3 moneybags.py", then first enter
+        the number of applicants, and type in the net worth of each
+        applicant and press enter

@@ -1,0 +1,70 @@
+Name: Chengxuan Li
+ID: 1631060
+CMPUT 275, Winter 2021
+
+Assignment - Trivial Navigation System - Part I
+
+Included Files:
+    * digraph.h
+    * dijkstra.h
+    * handle.h
+    * wdigraph.h
+    * digraph.cpp
+    * dijkstra.cpp
+    * handle.cpp
+    * server.cpp
+    * edmonton-roads-2.0.1.txt
+    * Makefile
+    * README
+
+List of Makefile Targets:
+    * server
+    * digraph.o
+    * dijkstra.o
+    * handle.o
+    * server.o
+    * clean
+
+Running Instruction:
+    - To generate an executable file, use "make server"
+    - To compile the objects, use the following:
+        - make digraph.o
+        - make dijkstra.o
+        - make handle.o
+        - make server.o
+    - To removes the executable and the objects, use "make clean"
+
+Note and Assumption:
+    Please notice that some additional files are included in this object. They
+    are handle.h and handle.cpp. The header file and corresponding source code
+    file include the declaration and implementation of function readGraph() and
+    manhattan() as well as the declaration of Point struct. The bool operator
+    == is overloaded for Point struct so that it can be convenient to compare
+    between two Point structs for searching and matching during the execution.
+
+    Also, handle.h and handle.cpp include some additional functions so that the
+    code can be more reusable and organized. The additional functions include the
+    following:
+        - findPath() function can recover a path consisted of way points based on
+        a given starting vertex and end vertex, from the search tree. Since this
+        process will be reused frequently every time client request a new path
+        between two points, instead of implementing in the server.cpp, it is in
+        a handle.cpp, and its declaration is in handle.h
+
+        - split() function can split the a string into two part based on a given
+        character. The first part is assignable, and the latter part is the
+        original string without the first part. Since the program requires lots
+        of string processing and recover information from the string, it is
+        declared and implemented separately in handle.cpp and handle.h
+
+        - setPoint() function can find the closest point that is the database to
+        the point from client's request. Since this process is used every time
+        client request, it is also declared and implemented separately in handle
+        .cpp and handle.h
+
+    A new class is in dijkstra.h, which includes a functor for comparison between
+    element in heap / priority queue.
+
+    Lastly, if the program need to be tested, please put the server.exe with
+    edmonton-roads-2.0.1.txt in same working directory because the .exe file will
+    read the information from this file.

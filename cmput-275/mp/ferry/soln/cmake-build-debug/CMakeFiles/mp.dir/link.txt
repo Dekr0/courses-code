@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/mp.dir/ferry.cpp.o  -o mp 

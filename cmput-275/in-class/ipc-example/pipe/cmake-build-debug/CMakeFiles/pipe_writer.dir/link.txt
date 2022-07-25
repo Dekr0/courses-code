@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/pipe_writer.dir/writer.cpp.o  -o pipe_writer 

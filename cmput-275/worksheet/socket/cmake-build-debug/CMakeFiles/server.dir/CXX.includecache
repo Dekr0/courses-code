@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dekr0/Documents/cmput275/worksheet/socket/server.cpp
+arpa/inet.h
+-
+cstring
+-
+iostream
+-
+netdb.h
+-
+sys/socket.h
+-
+sys/types.h
+-
+unistd.h
+-
+

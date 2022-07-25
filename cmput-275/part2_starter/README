@@ -1,0 +1,44 @@
+Name: Chengxuan Li
+ID: 1631060
+CMPUT 275, Winter 2021
+
+Assignment - Trivial Navigation System - Part II
+
+Included Files / Directories:
+    * client directory
+    * server directory
+    * README
+    * Makefile
+    * plotter
+
+List of Makefile Targets:
+    * all
+    * client
+    * client.o
+    * clean
+    * digraph.o
+    * dijkstra.o
+    * handle.o
+    * preprocess.o
+    * server.o
+
+Running Instruction:
+    - To generate generate all the executables, use "make all"
+    - To compile the objects, use the following:
+        - make client.o
+        - make digraph.o
+        - make dijkstra.o
+        - make handle.o
+        - make preprocess.o
+        - make server.o
+    - To removes the executable and the objects, use "make clean"
+
+Note and Assumption:
+    Please notice that there are additional headers files and .cpp files
+    included in this build. These files separate the definition and
+    implementation of functions that are frequently used so that it is
+    more organized. Also, other than the functions that are the requirements
+    for this assignment,functions for pre-processing and formatting are also
+    included so that the code is more reusable. For detail explanation and
+    implementation for these functions, please view in preprocess.h,
+    preprocess.cpp, handle.h, and handle.cpp.

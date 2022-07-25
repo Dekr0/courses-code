@@ -1,0 +1,6 @@
+project(TC0)
+project(TC1)
+project(GTC)
+add_executable(TC0 climbing.cpp testcase-000.cpp)
+add_executable(TC1 climbing.cpp testcase-001.cpp)
+add_executable(GTC climbing.cpp generic_test.cpp)

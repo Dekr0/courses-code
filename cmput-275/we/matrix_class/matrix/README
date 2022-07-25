@@ -1,0 +1,15 @@
+Name: Chengxuan Li
+ID: 1631060
+CMPUT 275, Winter 2021
+
+Exercise 4: Matrix Class
+
+Included Files:
+	* matrix.cpp
+	* matrix.h
+	* README
+	* Makefile
+
+Running Instruction:
+	- To compile the matrix.cpp file into object file, use "make -s matrix.o"
+	- To clean up all the object files, use "make -s clean"

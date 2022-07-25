@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Dekr0/cmput275/in-class/hash_table/dynarray.h
+cassert
+-
+cstdlib
+-
+algorithm
+-
+
+D:/Dekr0/cmput275/in-class/hash_table/hash_table.h
+linked_list.h
+D:/Dekr0/cmput275/in-class/hash_table/linked_list.h
+dynarray.h
+D:/Dekr0/cmput275/in-class/hash_table/dynarray.h
+cassert
+-
+
+D:/Dekr0/cmput275/in-class/hash_table/hashworksheet.cpp
+iostream
+-
+hash_table.h
+D:/Dekr0/cmput275/in-class/hash_table/hash_table.h
+monster_record.h
+D:/Dekr0/cmput275/in-class/hash_table/monster_record.h
+
+D:/Dekr0/cmput275/in-class/hash_table/linked_list.h
+cassert
+-
+
+D:/Dekr0/cmput275/in-class/hash_table/monster_record.h
+string
+-
+functional
+-
+ostream
+-
+

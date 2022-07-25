@@ -1,0 +1,51 @@
+Name:
+Marking TAs:
+    correctness: Xinlei (Ray) Chen
+    design & style: Rebecca Walton
+
+CMPUT 275 - Tangible Computing Winter 2021
+Marking Guidelines for Weekly Exercise 5 -- Dynamic Hashing
+
+ ========================================================================
+ Mark:      Description:
+ ========================================================================
+            ** Correctness: 
+            - [100] Pass all tests
+			
+ Correctness Deductions:
+ ------------------------------------------------------------------------
+ /100 (Correctness)
+ ========================================================================
+            ** Design & Style
+            - Code
+                - Default hash table size is 10
+				- Table is resized appropriately upon insertion and deletion
+				  of items
+				- Buckets for items are recomputed when table has grown
+				- no memory leaks
+                - written code needs to be well-documented
+		
+				
+ Design & Style Deductions:
+
+ ========================================================================
+            ** Submission Format
+            - submission follows the submission guidelines
+            - submit a Makefile, exercise5.cpp, hash_table.h, linked_list.h,
+			  and a README
+			- Makefile contains all required targets
+			
+ Submission Format Deductions:
+
+ ========================================================================
+            ** Late submissions According to the Course Outline
+            - Up to 12 hrs late: -20
+            - After that: Not Accepted
+ Late Submission Deductions:
+
+========================================================================
+ /100 (Total Mark)
+ ========================================================================
+
+ Comments:
+    Search for ***COMMENT*** in your .cpp file for additional comments

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/io.dir/iotest.cpp.o  -o io 

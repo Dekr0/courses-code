@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dekr0/Documents/cmput275/we/we6_provided_files/digraph.cpp
+digraph.h
+/home/dekr0/Documents/cmput275/we/we6_provided_files/digraph.h
+
+/home/dekr0/Documents/cmput275/we/we6_provided_files/digraph.h
+unordered_map
+-
+unordered_set
+-
+vector
+-
+set
+-
+
+/home/dekr0/Documents/cmput275/we/we6_provided_files/graph_concepts.cpp
+iostream
+-
+string
+-
+unordered_set
+-
+digraph.h
+/home/dekr0/Documents/cmput275/we/we6_provided_files/digraph.h
+
