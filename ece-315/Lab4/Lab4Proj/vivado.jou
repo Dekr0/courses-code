@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Mar 25 18:28:28 2022
+# Process ID: 2600
+# Current directory: E:/ECE315/Lab4/Lab4Proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1176 E:\ECE315\Lab4\Lab4Proj\lab_4_v0.xpr
+# Log file: E:/ECE315/Lab4/Lab4Proj/vivado.log
+# Journal file: E:/ECE315/Lab4/Lab4Proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ECE315/Lab4/Lab4Proj/lab_4_v0.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk -hwspec E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk/design_1_wrapper.hdf
+launch_sdk -workspace E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk -hwspec E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk/design_1_wrapper.hdf
+file mkdir E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk
+file copy -force E:/ECE315/Lab4/Lab4Proj/lab_4_v0.runs/impl_1/design_1_wrapper.sysdef E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk -hwspec E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk/design_1_wrapper.hdf

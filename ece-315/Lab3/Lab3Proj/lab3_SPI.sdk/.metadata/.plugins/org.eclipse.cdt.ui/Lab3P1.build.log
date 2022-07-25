@@ -1,0 +1,8 @@
+18:36:59 **** Incremental Build of configuration Debug for project Lab3P1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+
+18:36:59 Build Finished (took 137ms)
+

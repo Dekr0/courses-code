@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Mar 15 14:23:54 2022
+# Process ID: 7948
+# Current directory: C:/Users/chengxua/Lab4/lab_4_v0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9904 C:\Users\chengxua\Lab4\lab_4_v0\lab_4_v0.xpr
+# Log file: C:/Users/chengxua/Lab4/lab_4_v0/vivado.log
+# Journal file: C:/Users/chengxua/Lab4/lab_4_v0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chengxua/Lab4/lab_4_v0/lab_4_v0.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file mkdir C:/Users/chengxua/Lab4/lab_4_v0/lab_4_v0.sdk
+file copy -force C:/Users/chengxua/Lab4/lab_4_v0/lab_4_v0.runs/impl_1/design_1_wrapper.sysdef C:/Users/chengxua/Lab4/lab_4_v0/lab_4_v0.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/chengxua/Lab4/lab_4_v0/lab_4_v0.sdk -hwspec C:/Users/chengxua/Lab4/lab_4_v0/lab_4_v0.sdk/design_1_wrapper.hdf

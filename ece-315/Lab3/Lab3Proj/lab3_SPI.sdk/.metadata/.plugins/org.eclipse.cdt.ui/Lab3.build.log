@@ -1,0 +1,44 @@
+00:06:35 **** Auto Build of configuration Debug for project Lab3 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/initialization.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/initialization.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/initialization.d" -MT"src/initialization.o" -o "src/initialization.o" "../src/initialization.c"
+../src/initialization.c: In function 'SpiMasterRead':
+../src/initialization.c:172:6: warning: unused variable 'StatusReg' [-Wunused-variable]
+  u32 StatusReg;
+      ^~~~~~~~~
+../src/initialization.c:180:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/initialization.c
+ 
+Building file: ../src/spi_lab3_main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/spi_lab3_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/spi_lab3_main.d" -MT"src/spi_lab3_main.o" -o "src/spi_lab3_main.o" "../src/spi_lab3_main.c"
+In file included from ../src/spi_lab3_main.c:66:
+../src/initialization.h:52: warning: "configGENERATE_RUN_TIME_STATS" redefined
+ #define configGENERATE_RUN_TIME_STATS 1
+ 
+In file included from ../../Lab3_bsp/ps7_cortexa9_0/include/FreeRTOS.h:56,
+                 from ../src/spi_lab3_main.c:51:
+../../Lab3_bsp/ps7_cortexa9_0/include/FreeRTOSConfig.h:109: note: this is the location of the previous definition
+ #define configGENERATE_RUN_TIME_STATS 0
+ 
+Finished building: ../src/spi_lab3_main.c
+ 
+Building target: Lab3.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab3_bsp/ps7_cortexa9_0/lib -o "Lab3.elf"  ./src/initialization.o ./src/spi_lab3_main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: Lab3.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Lab3.elf  |tee "Lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  90364	   3416	  89648	 183428	  2cc84	Lab3.elf
+Finished building: Lab3.elf.size
+ 
+
+00:06:35 Build Finished (took 638ms)
+

@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Mar 25 18:28:28 2022
+# Process ID: 2600
+# Current directory: E:/ECE315/Lab4/Lab4Proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1176 E:\ECE315\Lab4\Lab4Proj\lab_4_v0.xpr
+# Log file: E:/ECE315/Lab4/Lab4Proj/vivado.log
+# Journal file: E:/ECE315/Lab4/Lab4Proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ECE315/Lab4/Lab4Proj/lab_4_v0.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'E:/ECE315/Lab4/Lab4Proj/lab_4_v0.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_sdk -workspace E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk -hwspec E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk -hwspec E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk -hwspec E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk -hwspec E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file mkdir E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk
+file copy -force E:/ECE315/Lab4/Lab4Proj/lab_4_v0.runs/impl_1/design_1_wrapper.sysdef E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk -hwspec E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk -hwspec E:/ECE315/Lab4/Lab4Proj/lab_4_v0.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 25 23:10:54 2022...

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Mar 22 22:32:49 2022
+# Process ID: 8836
+# Current directory: E:/ECE315/Lab3/Lab3Proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12176 E:\ECE315\Lab3\Lab3Proj\lab3_SPI.xpr
+# Log file: E:/ECE315/Lab3/Lab3Proj/vivado.log
+# Journal file: E:/ECE315/Lab3/Lab3Proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ECE315/Lab3/Lab3Proj/lab3_SPI.xpr
+update_compile_order -fileset sources_1
+file copy -force E:/ECE315/Lab3/Lab3Proj/lab3_SPI.runs/impl_1/design_1_wrapper.sysdef E:/ECE315/Lab3/Lab3Proj/lab3_SPI.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace E:/ECE315/Lab3/Lab3Proj/lab3_SPI.sdk -hwspec E:/ECE315/Lab3/Lab3Proj/lab3_SPI.sdk/design_1_wrapper.hdf

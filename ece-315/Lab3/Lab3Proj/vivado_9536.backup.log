@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Mar 22 12:53:45 2022
+# Process ID: 9536
+# Current directory: E:/ECE315/Lab3/Lab3Proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9364 E:\ECE315\Lab3\Lab3Proj\lab3_SPI.xpr
+# Log file: E:/ECE315/Lab3/Lab3Proj/vivado.log
+# Journal file: E:/ECE315/Lab3/Lab3Proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ECE315/Lab3/Lab3Proj/lab3_SPI.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/bfcoc/zynq_practice/ECE_315_WINTER_2021_LABS/lab3_SPI' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+open_bd_design {E:/ECE315/Lab3/Lab3Proj/lab3_SPI.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Successfully read diagram <design_1> from BD file <E:/ECE315/Lab3/Lab3Proj/lab3_SPI.srcs/sources_1/bd/design_1/design_1.bd>
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Mar 22 12:56:26 2022] Launched synth_1...
+Run output will be captured here: E:/ECE315/Lab3/Lab3Proj/lab3_SPI.runs/synth_1/runme.log
+[Tue Mar 22 12:56:26 2022] Launched impl_1...
+Run output will be captured here: E:/ECE315/Lab3/Lab3Proj/lab3_SPI.runs/impl_1/runme.log
+file mkdir E:/ECE315/Lab3/Lab3Proj/lab3_SPI.sdk
+file copy -force E:/ECE315/Lab3/Lab3Proj/lab3_SPI.runs/impl_1/design_1_wrapper.sysdef E:/ECE315/Lab3/Lab3Proj/lab3_SPI.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace E:/ECE315/Lab3/Lab3Proj/lab3_SPI.sdk -hwspec E:/ECE315/Lab3/Lab3Proj/lab3_SPI.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/ECE315/Lab3/Lab3Proj/lab3_SPI.sdk -hwspec E:/ECE315/Lab3/Lab3Proj/lab3_SPI.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 22 22:31:31 2022...
