@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LonelyTwitter</string>
+    <string name="sendTweetButton">Send tweet</string>
+    <string name="tweetMessageField">Enter a tweet message</string>
+</resources>
