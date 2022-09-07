@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file F:\ECE410_2020\Lab0_Install\Install_verify\Install_verify.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

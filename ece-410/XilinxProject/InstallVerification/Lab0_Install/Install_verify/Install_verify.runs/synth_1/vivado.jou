@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Sep  9 11:12:23 2020
+# Process ID: 17572
+# Current directory: F:/ECE410_2020/Lab0_Install/Install_verify/Install_verify.runs/synth_1
+# Command line: vivado.exe -log bcd_counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bcd_counter.tcl
+# Log file: F:/ECE410_2020/Lab0_Install/Install_verify/Install_verify.runs/synth_1/bcd_counter.vds
+# Journal file: F:/ECE410_2020/Lab0_Install/Install_verify/Install_verify.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source bcd_counter.tcl -notrace
