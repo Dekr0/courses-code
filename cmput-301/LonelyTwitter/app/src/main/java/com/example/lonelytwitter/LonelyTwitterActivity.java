@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class LonelyTwitterActivity extends AppCompatActivity {
 
-    private ArrayList<Tweet> tweetList = new ArrayList<Tweet>();
+    private final ArrayList<Tweet> tweetList = new ArrayList<Tweet>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

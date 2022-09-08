@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main); // Not necessary
 
         final Button sendButton = findViewById(R.id.button);
         sendButton.setOnClickListener(this);
