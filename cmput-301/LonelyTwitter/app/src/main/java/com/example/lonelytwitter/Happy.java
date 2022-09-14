@@ -6,6 +6,8 @@ import java.util.Date;
 
 public class Happy extends Mood {
 
+    private static final String HAPPY_MOOD = "Happy";
+
     public Happy() {
         super();
     }
@@ -17,6 +19,6 @@ public class Happy extends Mood {
     @NonNull
     @Override
     public String toString() {
-        return "Happy";
+        return HAPPY_MOOD;
     }
 }
