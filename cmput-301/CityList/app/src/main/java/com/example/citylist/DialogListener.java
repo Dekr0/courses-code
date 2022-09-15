@@ -1,11 +1,13 @@
 package com.example.citylist;
 
 
+import java.util.ArrayList;
+
 /**
  * References:
  * https://developer.android.com/develop/ui/views/components/dialogs#PassingEvents
  */
-public interface AddCityDialogListener {
+public interface DialogListener {
 
-    public void onDialogAddClick(String cityName);
+    public void onDialogConfirmClick(boolean status);
 }

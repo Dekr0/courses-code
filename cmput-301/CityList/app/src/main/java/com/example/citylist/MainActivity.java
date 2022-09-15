@@ -1,8 +1,6 @@
 package com.example.citylist;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentResultListener;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,9 +10,10 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity
-        implements AddCityDialogListener, View.OnClickListener {
+        implements DialogListener, View.OnClickListener {
 
     Button addCityButton;
     Button deleteCityButton;
@@ -26,23 +25,26 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onClick(View view) {
+        Bundle citiesBundle = new Bundle();
+        citiesBundle.putStringArrayList("cityList", cityList);
 
         if (view.getId() == addCityButton.getId()) {
             getSupportFragmentManager().beginTransaction()
                     .setReorderingAllowed(true)
-                    .add(AddCityDialog.class, null, "add_city_dialog")
+                    .add(AddCityDialog.class, citiesBundle, "add_city_dialog")
                     .commit();
         } else if (view.getId() == deleteCityButton.getId()) {
-            Bundle citiesBundle = new Bundle();
-            citiesBundle.putStringArrayList("cityList", cityList);
-
+            getSupportFragmentManager().beginTransaction()
+                    .setReorderingAllowed(true)
+                    .add(DeleteCityFragment.class, citiesBundle, "delete_city_dialog")
+                    .commit();
         }
     }
 
     @Override
-    public void onDialogAddClick(String cityName) {
-        if (!cityList.contains(cityName)) {
-            adapter.add(cityName);
+    public void onDialogConfirmClick(boolean status) {
+        if (status) {
+            adapter.notifyDataSetChanged();
         }
     }
 
