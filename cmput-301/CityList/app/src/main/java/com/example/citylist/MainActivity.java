@@ -4,47 +4,59 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity
-        implements DialogListener, View.OnClickListener {
+        implements DialogListener, AdapterView.OnItemClickListener,
+        View.OnClickListener {
 
-    Button addCityButton;
-    Button deleteCityButton;
-    ListView cityListView;
+    private Button addCityButton;
+    private Button deleteCityButton;
 
-    ArrayAdapter<String> adapter;
+    ArrayAdapter<City> adapter;
 
-    ArrayList<String> cityList;
+    ArrayList<City> cities;
+
+    @Override
+    public void onAddCityDialogConfirmClick(String cityName, String province) {
+        for (City city :
+                cities) {
+            if (cityName.equals(city.getCity())) {
+                return;
+            }
+        }
+
+        cities.add(new City(cityName, province));
+
+        adapter.notifyDataSetChanged();
+    }
 
     @Override
     public void onClick(View view) {
-        Bundle citiesBundle = new Bundle();
-        citiesBundle.putStringArrayList("cityList", cityList);
+        Bundle bundle = new Bundle();
 
         if (view.getId() == addCityButton.getId()) {
             getSupportFragmentManager().beginTransaction()
                     .setReorderingAllowed(true)
-                    .add(AddCityDialog.class, citiesBundle, "add_city_dialog")
+                    .add(AddEditCityDialog.class, bundle, AddEditCityDialog.ADD_TAG)
                     .commit();
         } else if (view.getId() == deleteCityButton.getId()) {
+            ArrayList<String> cityNames = new ArrayList<>();
+            for (City city :
+                    cities) {
+                cityNames.add(city.getCity());
+            }
+
+            bundle.putStringArrayList("cityNames", cityNames);
             getSupportFragmentManager().beginTransaction()
                     .setReorderingAllowed(true)
-                    .add(DeleteCityFragment.class, citiesBundle, "delete_city_dialog")
+                    .add(DeleteCityFragment.class, bundle, "delete_city_dialog")
                     .commit();
-        }
-    }
-
-    @Override
-    public void onDialogConfirmClick(boolean status) {
-        if (status) {
-            adapter.notifyDataSetChanged();
         }
     }
 
@@ -55,19 +67,58 @@ public class MainActivity extends AppCompatActivity
 
         addCityButton = findViewById(R.id.add_city_button);
         deleteCityButton = findViewById(R.id.delete_city_button);
-        cityListView = findViewById(R.id.city_list_view);
+        ListView listView = findViewById(R.id.city_list_view);
 
-        String[] cities = {"Edmonton", "Vancouver"};
+        String[] cities = {"Edmonton", "Vancouver", "Calgary", "Toronto", "Waterloo", "Kingston"};
+        String[] provinces = {"AB", "BC", "AB", "ON", "ON", "ON"};
 
-        cityList = new ArrayList<>();
-        cityList.addAll(Arrays.asList(cities));
+        this.cities = new ArrayList<>();
+        for (int i = 0; i < cities.length; i++) {
+            this.cities.add(new City(cities[i], provinces[i]));
+        }
 
-        adapter = new ArrayAdapter<>(getApplicationContext(),
-                R.layout.list_text_view_template, cityList);
-
-        cityListView.setAdapter(adapter);
+        adapter = new CityArrayAdapter(this, this.cities);
 
         addCityButton.setOnClickListener(this);
         deleteCityButton.setOnClickListener(this);
+
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(this);
+    }
+
+    @Override
+    public void onDeleteDialogConfirmClick(int position) {
+        cities.remove(position);
+
+        adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onEditCityDialogConfirmClick(String oldCity, String newCity,
+                                             String province) {
+        for (City city :
+                cities) {
+            if (oldCity.equals(city.getCity())) {
+                city.setCity(newCity);
+                city.setProvince(province);
+
+                adapter.notifyDataSetChanged();
+
+                return;
+            }
+        }
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Bundle bundle = new Bundle();
+
+        bundle.putString("city", cities.get(i).getCity());
+        bundle.putString("province", cities.get(i).getProvince());
+
+        getSupportFragmentManager().beginTransaction()
+                .setReorderingAllowed(true)
+                .add(AddEditCityDialog.class, bundle, AddEditCityDialog.EDIT_TAG)
+                .commit();
     }
 }

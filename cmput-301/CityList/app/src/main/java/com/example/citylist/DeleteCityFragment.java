@@ -3,7 +3,6 @@ package com.example.citylist;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +22,6 @@ public class DeleteCityFragment extends DialogFragment {
     ArrayAdapter<String> adapter;
     DialogListener listener;
 
-    ArrayList<String> cityList;
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -39,7 +37,7 @@ public class DeleteCityFragment extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-        cityList = requireArguments().getStringArrayList("cityList");
+        ArrayList<String> city = requireArguments().getStringArrayList("cityNames");
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
@@ -48,17 +46,17 @@ public class DeleteCityFragment extends DialogFragment {
         spinner = view.findViewById(R.id.spinner);
 
         adapter = new ArrayAdapter<>(getActivity(),
-                android.R.layout.simple_spinner_dropdown_item, cityList);
+                android.R.layout.simple_spinner_dropdown_item, city);
 
         spinner.setAdapter(adapter);
 
         builder.setView(view)
                 .setPositiveButton("Delete", (dialogInterface, i)
                         -> {
-                    if (!cityList.isEmpty()) {
-                        cityList.remove(spinner.getSelectedItem().toString());
+                    if (!city.isEmpty()) {
+                        listener.onDeleteDialogConfirmClick(spinner.
+                                getSelectedItemPosition());
                     }
-                    listener.onDialogConfirmClick(true);
                 });
 
         return builder.create();

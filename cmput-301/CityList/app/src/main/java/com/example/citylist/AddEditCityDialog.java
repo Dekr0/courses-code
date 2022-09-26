@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
@@ -21,13 +22,15 @@ import java.util.ArrayList;
  * https://developer.android.com/develop/ui/views/components/dialogs#PassingEvents
  */
 
-public class AddCityDialog extends DialogFragment {
+public class AddEditCityDialog extends DialogFragment {
 
-    EditText editText;
+    final static public String ADD_TAG = "Add";
+    final static public String EDIT_TAG = "Edit";
+
+    EditText editCity;
+    EditText editProvince;
 
     DialogListener listener;
-
-    ArrayList<String> cityList;
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -43,26 +46,38 @@ public class AddCityDialog extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-        cityList = requireArguments().getStringArrayList("cityList");
+        Bundle bundle = requireArguments();
+        String tag = getTag();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
         LayoutInflater inflater = requireActivity().getLayoutInflater();
+
         View view = inflater.inflate(R.layout.add_city_dialog, null);
-        editText = view.findViewById(R.id.edit_city_text);
+        editCity = view.findViewById(R.id.edit_city);
+        editProvince = view.findViewById(R.id.edit_province);
+
+        if (tag != null && tag.equals(EDIT_TAG)) {
+            editCity.setText(bundle.getString("city"));
+            editProvince.setText(bundle.getString("province"));
+        }
 
         builder.setView(view)
-                .setPositiveButton(R.string.add, (dialogInterface, i)
-                        -> {
-                    String cityName = editText.getText().toString();
-                    boolean hasCity = !cityList.contains(cityName);
+                .setPositiveButton(tag, (dialogInterface, i) -> {
+                    if (tag != null) {
 
-                    if (hasCity) {
-                        cityList.add(cityName);
+                        String city = editCity.getText().toString();
+                        String province = editProvince.getText().toString();
+
+                        if (tag.equals(EDIT_TAG)) {
+                            listener.onEditCityDialogConfirmClick(
+                                    bundle.getString("city"), city, province);
+                        } else if (tag.equals(ADD_TAG)) {
+                            listener.onAddCityDialogConfirmClick(city, province);
+                        }
                     }
-
-                    listener.onDialogConfirmClick(hasCity);
                 });
+
 
         return builder.create();
     }
