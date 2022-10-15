@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Oct  5 17:25:27 2022
+# Process ID: 350642
+# Current directory: /home/dekr0/Code/XilinxProject/Lab_2_seq_detecor/Lab_2_seq_detecor.runs/impl_1
+# Command line: vivado -log seq_fsm.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source seq_fsm.tcl -notrace
+# Log file: /home/dekr0/Code/XilinxProject/Lab_2_seq_detecor/Lab_2_seq_detecor.runs/impl_1/seq_fsm.vdi
+# Journal file: /home/dekr0/Code/XilinxProject/Lab_2_seq_detecor/Lab_2_seq_detecor.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source seq_fsm.tcl -notrace
