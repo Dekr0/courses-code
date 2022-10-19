@@ -1,0 +1,12 @@
+
+{ 
+    crc :  5559945776918504881  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto a10cd7d1fec54118b4db1e1849ee47ab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot seq_fsm_tb_behav xil_defaultlib.seq_fsm_tb" , 
+    buildDate : "May 27 2020" , 
+    buildTime : "19:59:15" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/seq_fsm_tb_behav/xsimk\"   \"xsim.dir/seq_fsm_tb_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/seq_fsm_tb_behav/obj/xsim_1.lnx64.o\" -L\"/home/dekr0/Xilinx/Vivado/2020.1/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

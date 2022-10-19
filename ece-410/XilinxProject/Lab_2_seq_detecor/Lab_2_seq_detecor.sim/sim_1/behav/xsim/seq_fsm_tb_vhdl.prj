@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Lab_2_seq_detecor.srcs/sources_1/new/seq_fsm.vhd" \
-"../../../../Lab_2_seq_detecor.srcs/sim_1/new/seq_fsm_tb.vhd" \
-
-# Do not sort compile order
-nosort
