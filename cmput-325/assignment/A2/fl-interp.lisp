@@ -1,9 +1,3 @@
-; Name : Chengxuan Li
-; Student Number : 1631060
-; Course Number : CMPUT 325
-; Lab Section : H02
-; Assignment : 2
-
 ; function fl-interp is built by modifying and extending 
 ; based on the skeleton code from eClass
 (defun fl-interp (E P)
